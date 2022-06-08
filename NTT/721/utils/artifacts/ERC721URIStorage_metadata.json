@@ -1,0 +1,227 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "ERC721 token with storage based token URI management.",
+			"kind": "dev",
+			"methods": {
+				"balanceOf(address)": {
+					"details": "See {IERC721-balanceOf}."
+				},
+				"name()": {
+					"details": "See {IERC721Metadata-name}."
+				},
+				"ownerOf(uint256)": {
+					"details": "See {IERC721-ownerOf}."
+				},
+				"symbol()": {
+					"details": "See {IERC721Metadata-symbol}."
+				},
+				"tokenURI(uint256)": {
+					"details": "See {IERC721Metadata-tokenURI}."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/721/utils/ERC721URIStorage.sol": "ERC721URIStorage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/721/ERC721.sol": {
+			"keccak256": "0xc51c4ba97a8bfcbe1b41672c458eff943ba6628542e7522dbc3939e550448ff3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3fc62fd9f836d3e4059cbb9de65c2071b8cd850cb3fc24ce3f26d922b0e39cc3",
+				"dweb:/ipfs/QmWTnXwFSSe4tE3nRYAdW1N12aAWvqPHydn191FuvSUUHn"
+			]
+		},
+		"contracts/721/interfaces/IERC721.sol": {
+			"keccak256": "0x98a80bfd2c07c212973cb15df7916a5d3c4c41c7b2423a7e1cb6f20416b2777f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d8202cedc7aafa7d36034e1630a79f1d409aac45046af32f182719cb23031b7a",
+				"dweb:/ipfs/Qma1Uhthq78Z4Rx8A4UeGeQvLej46NXi7MduB2wB3fuhc9"
+			]
+		},
+		"contracts/721/interfaces/IERC721Metadata.sol": {
+			"keccak256": "0xbd2f66fddef3b5180deb1c8bef90ae0a356f85c25dc7ef52fc663dea2b449ff4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0ba681d1360880d7fb5457223586f550029f430bea9a7b34400eb63c4c3ecae",
+				"dweb:/ipfs/QmTZGYJQJDE8nSuHFHshuc1fYSwdWJuEXVBZ9vUQKF6ao8"
+			]
+		},
+		"contracts/721/interfaces/IERC721Receiver.sol": {
+			"keccak256": "0xf519c884616195e754dcc17993b01095b97ee7c63f695a8b99d351a143195201",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://31d5c889c1bc19d04642d2d6cd3b58bc557f594b9fa67ec05d896366da5f51a4",
+				"dweb:/ipfs/QmVVn4QxiSBBw1hgM7wuA5np2kGiVnn3P59zowzEuhqbyR"
+			]
+		},
+		"contracts/721/utils/Address.sol": {
+			"keccak256": "0x107b10b97a5a3c194f80ae6f35b15bb1c2752c596759d07375a34b3637ce1633",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37736cdc103b99f1cbc0a46c78e806cd40f27a1832b17336021d218eebecfbf0",
+				"dweb:/ipfs/QmX2fU8erAnCTPh6nzJA9vJ3ZiULKzwqmPpygduUhUiwqw"
+			]
+		},
+		"contracts/721/utils/Context.sol": {
+			"keccak256": "0x2c36c9489879b7c91cdd73bbe8b2584f401aa26f4f252c04f053e824d6ca75c6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ef20575fc12fd27f252acd28a8d0f65893832f29fd9c82f7ec165121af4572f",
+				"dweb:/ipfs/QmZMCoWWDTjhs1CNFMWv4JNWVyyeuzyqteCHhF4heCUYJJ"
+			]
+		},
+		"contracts/721/utils/ERC721URIStorage.sol": {
+			"keccak256": "0x87573f6788f676ae4769599b0217f4d86daed3bb90ca408ea8abd00e531d2233",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://704e545bd45e46af1b270749ac710f08cd0021db5c4b40b8075113194e58a63d",
+				"dweb:/ipfs/QmZXV36Vk5idGvNUimHhLXj7SD8pYK2X5hzd9NjPAqc8zu"
+			]
+		},
+		"contracts/721/utils/Strings.sol": {
+			"keccak256": "0x24b6c85c306c7bcf62b3879911b1920f105da5e1584c2f77016451cd57f016b8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9c6b9898b79bf7ca862ab9c3bc58875f820c5138b6c006cd3229399456466e0c",
+				"dweb:/ipfs/QmciUgRnbKXAUeMUoDSdk9vEiR1RWnyirpjzMEzqbKsmHC"
+			]
+		}
+	},
+	"version": 1
+}
